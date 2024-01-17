@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Repositories</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-main">
+        <div class="container-h">
+            <div class="profile">
+                <img src="./img/p.jpg" alt="">
+                <div>
+                    <i class="fa-solid fa-link"></i><b>https://github.com/john_doe</b>
+                </div>
+            </div>
+            <div class="info">
+                <h1>John Doe</h1>
+                <p>Software Engineer</p>
+                <i class="fa-solid fa-location-dot"> Orlando</i>
+                <b>Twitter : https://twitter.com/john_Doe</b>
+            </div>
+        </div>
+    
+      <div class="container">
+        <input
+          type="text"
+          placeholder="Search by repository name"
+          id="searchInput"
+          oninput="handleSearch()"
+        />
+        <div class="repositories" id="repositories-list"></div>
+        <div class="loader" id="loader" style="display: none;"></div>
+        
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1"><<</a>
+          </li>
+          <li class="page-item active"><a class="page-link " href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item"><a class="page-link" href="#">9</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">>></a>
+          </li>
+        </ul>
+      </nav>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/49de6c3358.js" crossorigin="anonymous"></script>
+</div>
+  </body>
+</html>
